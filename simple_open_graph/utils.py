@@ -1,8 +1,8 @@
 from itertools import cycle,islice
-from django.utils.datastructures import SortedDict
+from collections import OrderedDict
 
 def string_to_dict(string):
-    dict = SortedDict()
+    dict = OrderedDict()
     if string:
         string = str(string)
         for arg in string.split(','):
